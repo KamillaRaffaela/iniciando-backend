@@ -12,13 +12,15 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function (req, res) {
-    return res.render("index")
-
+    return res.render("index.html")
 })
 
-server.get("/portifolio", function (req, res) {
-    return res.render("portifolio")
+server.get("/aulas", function (req, res) {
+    return res.render("aulas.html")
+})
 
+server.get("/cursos", function (req, res) {
+    return res.render("cursos.html")
 })
 
 

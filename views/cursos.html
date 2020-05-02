@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+{% block main %}
+<link rel="stylesheet" href="style.curso.css">
+
+<section class="cards">
+    <div class="starter">
+        <div id="starter" class="card card-starter">
+
+            <h1>01</h1>
+            <img src="../imagens/starte.svg" alt="Logostarter">
+            <div>
+                <h2>Torne-se um programador desejado</h2>
+                <h3>no mercodo com esses cursos gratuitos</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="lauchbase">
+        <div id="lauchBase" class='card card-lauchbase'>
+            <h1>02</h1>
+            <img src="../imagens/lauchbase.svg" alt="Logolauchbase">
+            <div>
+                <h2>Domine programção do zero</h2>
+                <h3>e tenho acesso às melhores opotundades do mercado</h3>
+            </div>
+        </div>
+    </div>
+    <div class="gostack">
+        <div id="goStack" class='card card-gostack'>
+            <h1>03</h1>
+            <img src="../imagens/gostack.svg" alt="Logogostack">
+            <div class="card-text">
+                <h2>Treinamento imersivo nas </h2>
+                <h3>tecnologias mais modernas de desenvolvimento web e mobile</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal-overlay">
+    <div class="modal">
+        <a href="#" class="close-modal">
+            <i class="material-icons">close</i>
+        </a>
+
+        <div class="modal-content" id="modal-content"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+{{ super() }}
+{% endblock %}

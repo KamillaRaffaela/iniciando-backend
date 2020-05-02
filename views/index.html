@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Inicio Alunos</title>
-       
-        <link rel="stylesheet" href="../public/style.index.css">
-        <link rel="icon" href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon"/>
-   
+{% extends 'layout.html' %}
+{% block main %}
+<link rel="stylesheet" href="style.index.css">
 
-    
+<div id="wrapper">
+    <img src="imagens/perfil.png" alt="Kamilla Raffaela">
+    <h1>Kamilla Raffela</h1>
+    <h2>Estudante de Programação - Rocketseat</h2>
+    <p>Aprendendo a dominar o Javascript, HTML e CSS. Estudante da <a href="https://Rocketseat.com.br"
+            target="_blank">Rocketseat</a></p>
+</div>
+<div id="links-footer" class="links">
+    <a href="https://github.com/KamillaRaffaela" target="_blank">Github</a>
+    <a href="https://twitter.com/home" target="_blank">Twitter</a>
+    <a href="https://www.linkedin.com/in/kamilla-raffaela-9910a851/" target="_blank">Linkedin</a>
+</div>
 
-    </head>
-    
-    <body>
-        <header>
-            <div class="links">
-                <a href="/" target="_blank">Inicio</a>
-                <a href="../views/index.paginaaula.html" target="_blank">Aulas</a>
-                <a href="paginarocket.html" target="_blank">Sobre</a>
-                <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
-                <a href="oi@rocketseat.com.br" target="_blank">Email</a>
-                <a href="+5547992078767" terget="_blank">Telefone</a>
-                
-            </div>
-        </header>
-        <div id="wrapper">
-            <img src="../imagens/perfil.png" alt="Kamilla Raffaela">
-            <h1>Kamilla Raffela</h1>
-            <h2>Estudante de Programação - Rocketseat</h2>
-            <p>Aprendendo a dominar o Javascript, HTML e CSS. Estudante  da <a href="https://Rocketseat.com.br"target = "_blank">Rocketseat</a></p>
-        </div>
-         <div id="links-footer" class="links">
-            <a href="https://github.com/KamillaRaffaela" target="_blank">Github</a>
-            <a href="https://twitter.com/home"target="_blank">Twitter</a>
-            <a href="https://www.linkedin.com/in/kamilla-raffaela-9910a851/"target="_blank">Linkedin</a>
-         </div>
-    </body>
-</html>
-
+{{ super() }}
+{% endblock %}
